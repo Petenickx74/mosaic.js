@@ -8,15 +8,18 @@
 	<script type="text/javascript" src="mosaic.js/canvas.js"></script>
 	<script type="text/javascript" src="mosaic.js/sprite.js"></script>
 	<script type="text/javascript" src="mosaic.js/world.js"></script>
+	
+	<script language = "javascript"> 
 		
 		var Context = null;
 		
-		$(document).ready();
-	
+		$(document).ready(function(){
+			Context = new HTML ("game", 640, 480 )
+		});
+	</script>	
 </head>
 <body>
 	<canvas id = “game” width = “640’ height = “480”
-	style = “boarder: 1px solid gray; width: 640px; height: 480px;”
-></canvas>
+	style = “boarder: 1px solid gray; width: 640px; height: 480px;”></canvas>
 </body>
 </html>
